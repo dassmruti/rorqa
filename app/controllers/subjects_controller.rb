@@ -1,6 +1,6 @@
 class SubjectsController < ApplicationController
   before_action :set_subject, only: [:show, :edit, :update, :destroy]
-
+  caches_page :index
   # GET /subjects
   # GET /subjects.json
   def index

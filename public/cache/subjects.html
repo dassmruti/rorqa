@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rorqa</title>
+  <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="99wuV0Qgi5FH/RBudIH0+4fIr7wQUMZn+Cq7eyofJuNWHMwpgiGa6Ca1B+GNbW/hbe82EepU4Sd1yRoxbBm58w==" />
+
+  <link rel="stylesheet" media="all" href="/assets/answers.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/twitter-bootstrap-static/bootstrap.self-603f330c29af013305325569c8c75d03d688963abd8cde4fffec17b5ce417bfb.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/twitter-bootstrap-static/sprites.self-556e1741ff6d22f63fe0be609679c8f06ffc45eabc31836b6b785475bb283b84.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap_and_overrides.self-f5a90d20e5090d64763dcfad94d947343b9898d7a030bb466e9247e00ca06c27.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/questions.self-91b502c973407d33ecd214b1a7c857189074b741b208809d54e38cd6d0de66a4.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/scaffolds.self-7ae1fb498e6db1afabcdc39721b4d570321ae8d37fab64a4957fb1782beba4cb.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/subjects.self-8bf17b24fc060bc2c70912e0b03142f19c3cad6bf6b9f6ddc3f1fa9882aa1924.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/tags.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/application.self-3087a46c590170eea40a20d0e59862b42a553974e7985ae50e05e7503252fe14.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-wysihtml5/bootstrap3-wysihtml5.self-bd96b16c5abeede9e3f30732e24627ca6299b988436861c186ebadb340b6c7e2.css?body=1" data-turbolinks-track="reload" />
+<link rel="stylesheet" media="all" href="/assets/bootstrap-wysihtml5/index.self-4a4c63b3b379fe307cf83e414c8ae532911fc0a1f3cb82fac49a7c36a8c5b78a.css?body=1" data-turbolinks-track="reload" />
+  <script src="/assets/jquery.self-bd7ddd393353a8d2480a622e80342adf488fb6006d667e8b42e4c0073393abee.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/rails-ujs.self-56055fe2ac3f3902deb9d12c17b2d725d432162b48fc443946daf7dfbc96d88a.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/turbolinks.self-1d1fddf91adc38ac2045c51f0a3e05ca97d07d24d15a4dcbf705009106489e69.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/affix.self-ffef5831dcf7a4d43a9620f0786e3be0130548db46f747ca2a904ac5a863fd18.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/alert.self-08f6e94a49ab0a922ef14d42862fcfb04b20b7fb57d3d2d3c868522cab811d6b.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/button.self-a5a9eae6660da739d4ae35473360346363ddd4af777c77d4cef8d01771bf25a2.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/carousel.self-5db2d16d5e04db4950c1aebd2496045acf0c3cc889e5ad0647589fbc85d463e6.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/collapse.self-d51cbeaf7f5ada1eb58a677ebeae512e315a02f545d5c7b252e7a79202913b32.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/dropdown.self-cd540439aa8dbb7db30618794daa83f0dd6bb0f84a763bd1b2bc69449be68712.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/tab.self-52433fba05f8c09386efdfd67dc876623a9f630e72cdebc232c5de7e8f9789b5.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/transition.self-0c6ebea816a743abc763e631df1641c3400ff38e647776d0faba7d31b414ce4f.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/scrollspy.self-7496072b8c0dd40f5d88076e7e3788487ec5b0aa9f9a04e71434194cb6250f08.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/modal.self-2b3f3fdebdb4f9ee9737d99cfc4cf2dc2ba54c83f2164c7836ef0b4d81f34b1f.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/tooltip.self-198806da8d1c06616d7e9d7be92d96eadca8159640a7dc21eb3121cb2b8a215a.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap/popover.self-36391474d61036c11b65bbb21b5847f57e6b195d8cb278b669accb3ac73e9626.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-wysihtml5/wysihtml5x-toolbar.self-f835bfe0ef8681a04b930aafeb1f792406f9426924cc7d7bf8d08463415b8120.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-wysihtml5/handlebars.runtime.min.self-5fa4bfc769ba3f6e730c2453d45ab26222e546e884ece044b0781c93c4cfd65d.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-wysihtml5/templates.self-3763bc32531aa6eead5161ab352ad4fd9a42814041116e110de42647257fd7fc.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-wysihtml5/bootstrap3-wysihtml5.self-afc297bd9a94e1ae19f3084ece7269c7329614dbf0b8573bc8e150a13a903365.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-wysihtml5/commands.self-0e434cd483ee027fcbdceb27a1784b62509766f11a510aa400e559e03082f132.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-wysihtml5/locales/en-US.self-4c2b45f8023b8a34240c7a73e6f9692b425fd8797c94ed3f7a91cbe649111959.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/bootstrap-wysihtml5/index.self-d088784b7ecb87f1ea17e6f982fa968ffefcc07b79de6ecc548fc00242868da6.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/answers.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/action_cable.self-be3674a79bb9d13d41d259b2c17fad23aef20946dab3603b9d02374ea795005f.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/cable.self-8484513823f404ed0c0f039f75243bfdede7af7919dda65f2e66391252443ce9.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/comments.self-fdc98dee79ee88255e10cac6caa91338165cb76cf0d263744d8d90011fc2ef8f.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/questions.self-f82397bbbb9a61af8080aec3ca2e750dacb6da0bb256b1dc73c34b1b2d6d7e2b.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/subjects.self-b3add9e6509f0d7a982284b648e372fe48d8dda26eb92dfbf5c506e439bf23fc.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/tags.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" data-turbolinks-track="reload"></script>
+<script src="/assets/application.self-3d7ed013ff0186a7fb744a21b6ac20f54467fddc6c68aeddaa206e764cd2b393.js?body=1" data-turbolinks-track="reload"></script>
+</head>
+
+<body>
+<ul class="nav nav-tabs">
+  <li role="questions" class="inactive"><a href="/questions">Questions</a></li>
+  <li role="subjects" class="active"><a href="/subjects">Subjects</a></li>
+  <li role="answers" class="inactive-answer" ><a href="#">Answers</a></li>
+</ul>
+<div class="custom-header">
+  <h1>Subjects</h1>
+</div>
+<div class="row">
+  <div class="well col-sm-10">
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>RUBY</strong><br>
+            <span class="text-muted">Subject level: 1</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".Ruby">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos Ruby">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>RUBY</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>2</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Thu, 18 May 2017 04:55:35 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/1"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/1/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/1">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>JAVA</strong><br>
+            <span class="text-muted">Subject level: 2</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".Java">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos Java">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>JAVA</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Thu, 18 May 2017 04:55:43 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/2"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/2/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/2">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>RAILS</strong><br>
+            <span class="text-muted">Subject level: 3</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".Rails">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos Rails">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>RAILS</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Thu, 18 May 2017 04:55:52 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/3"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/3/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/3">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>PYTHON</strong><br>
+            <span class="text-muted">Subject level: 4</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".Python">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos Python">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>PYTHON</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>1</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Thu, 18 May 2017 04:56:03 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/4"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/4/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/4">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>PERL</strong><br>
+            <span class="text-muted">Subject level: 5</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".Perl">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos Perl">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>PERL</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Thu, 18 May 2017 04:56:17 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/5"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/5/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/5">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>JAVASCRIPT</strong><br>
+            <span class="text-muted">Subject level: 6</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".Javascript">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos Javascript">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>JAVASCRIPT</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Thu, 18 May 2017 04:56:28 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/6"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/6/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/6">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>MATH</strong><br>
+            <span class="text-muted">Subject level: 7</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".Math">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos Math">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>MATH</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Fri, 19 May 2017 05:00:51 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/7"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/7/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/7">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row user-row">
+          <div class="col-sm-1">
+            <img class="img-circle"
+                 src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=50"
+                 alt="User Pic">
+          </div>
+          <div class="col-sm-10">
+            <strong>MY SUBJECT</strong><br>
+            <span class="text-muted">Subject level: 9</span>
+          </div>
+          <div class="col-sm-1 dropdown-user" data-for=".My_SUbject">
+            <i class="glyphicon glyphicon-chevron-down text-muted"></i>
+          </div>
+        </div>
+        <div class="row user-infos My_SUbject">
+          <div class="col-sm-10 offset1">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Subject information</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                  <div class="col-sm-3">
+                    <img class="img-circle"
+                         src="https://lh5.googleusercontent.com/-b0-k99FZlyE/AAAAAAAAAAI/AAAAAAAAAAA/eu7opA4byxI/photo.jpg?sz=100"
+                         alt="User Pic">
+                  </div>
+                  <div class="col-sm-6">
+                    <strong>MY SUBJECT</strong><br>
+                    <table class="table table-condensed table-responsive table-user-information">
+                      <tbody>
+                      <tr>
+                        <td>Total Questions:</td>
+                        <td>0</td>
+                      </tr>
+                      <tr>
+                        <td>Registered since:</td>
+                        <td>Sat, 27 May 2017 05:56:24 +0000</td>
+                      </tr>
+                      <tr>
+                        <td>Tags</td>
+                        <td>N/A</td>
+                      </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="panel-footer">
+                <div class="row">
+             <span class="pull-right">
+               <a class="btn btn-primary" href="/subjects/9"><span class="translation_missing" title="translation missing: en.helpers.links.show">Show</span></a>
+               <a class="btn btn-warning" href="/subjects/9/edit">Edit</a>
+               <a data-confirm="Are you sure?" class="btn btn-danger" rel="nofollow" data-method="delete" href="/subjects/9">Delete</a>
+
+               <!--<button class="btn btn-warning" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Edit this user"><i class="glyphicon glyphicon-edit glyphicon glyphicon-white"></i></button>-->
+               <!--<button class="btn btn-danger" type="button"-->
+               <!--data-toggle="tooltip"-->
+               <!--data-original-title="Remove this user"><i class="glyphicon glyphicon-remove glyphicon glyphicon-white"></i></button>-->
+                        </span>
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+  </div>
+  <div class="col-sm-2">
+    <a class="btn btn-primary pull-right" href="/subjects/new">New</a>
+  </div>
+</div>
+
+
+
+</body>
+</html>
